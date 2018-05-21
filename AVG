@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+int avg(int n)
+{
+	int sum = 0;
+	int data;
+	int i = n;
+	printf("plz input %d data\n",n);
+	while (i>0)
+	{
+		scanf("%d", &data);
+		sum += data;
+		i--;
+	}
+	return sum;
+}
+
+int main()
+{
+	int n = 0;
+	int a = 0;
+	printf("How many data U wanna input?\n");
+	scanf("%d",&n);
+	a = avg(n);
+	a = a / n;
+	printf("AVG is %d\n",a);
+
+	return 0;
+}
